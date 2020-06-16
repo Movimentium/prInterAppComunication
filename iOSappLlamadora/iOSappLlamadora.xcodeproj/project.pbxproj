@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C441D9B2498572C005FAB1F /* MainLlamadora.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C441D9A2498572C005FAB1F /* MainLlamadora.storyboard */; };
 		0C441D9D2498573D005FAB1F /* LlamadoraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C441D9C2498573D005FAB1F /* LlamadoraVC.swift */; };
+		0C441D9F24985ADD005FAB1F /* EnLaAppInvocadora.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C441D9E24985ADC005FAB1F /* EnLaAppInvocadora.png */; };
 		0CE8224F24984F8C002EEA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8224E24984F8C002EEA07 /* AppDelegate.swift */; };
 		0CE8225124984F8C002EEA07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8225024984F8C002EEA07 /* SceneDelegate.swift */; };
 		0CE8225824984F8C002EEA07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE8225724984F8C002EEA07 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		0C441D9A2498572C005FAB1F /* MainLlamadora.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainLlamadora.storyboard; sourceTree = "<group>"; };
 		0C441D9C2498573D005FAB1F /* LlamadoraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LlamadoraVC.swift; sourceTree = "<group>"; };
+		0C441D9E24985ADC005FAB1F /* EnLaAppInvocadora.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnLaAppInvocadora.png; sourceTree = "<group>"; };
 		0CE8224B24984F8C002EEA07 /* iOSappLlamadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSappLlamadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE8224E24984F8C002EEA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE8225024984F8C002EEA07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				0CE8225C24984F8C002EEA07 /* Info.plist */,
 				0CE8225724984F8C002EEA07 /* Assets.xcassets */,
 				0CE822A4249852F8002EEA07 /* LaunchScreen.storyboard */,
+				0C441D9E24985ADC005FAB1F /* EnLaAppInvocadora.png */,
 			);
 			path = iOSappLlamadora;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				0CE822A5249852F8002EEA07 /* LaunchScreen.storyboard in Resources */,
 				0C441D9B2498572C005FAB1F /* MainLlamadora.storyboard in Resources */,
 				0CE8225824984F8C002EEA07 /* Assets.xcassets in Resources */,
+				0C441D9F24985ADD005FAB1F /* EnLaAppInvocadora.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

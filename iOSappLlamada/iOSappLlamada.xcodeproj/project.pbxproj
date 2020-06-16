@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C441D99249856E0005FAB1F /* LlamarDesdeSafari.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C441D98249856E0005FAB1F /* LlamarDesdeSafari.png */; };
+		0C441DA124985AE4005FAB1F /* EnLaAppAInvocar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C441DA024985AE4005FAB1F /* EnLaAppAInvocar.png */; };
 		0CE8228F24984FEA002EEA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8228E24984FEA002EEA07 /* AppDelegate.swift */; };
 		0CE8229124984FEA002EEA07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8229024984FEA002EEA07 /* SceneDelegate.swift */; };
 		0CE8229824984FEB002EEA07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE8229724984FEB002EEA07 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		0C441D98249856E0005FAB1F /* LlamarDesdeSafari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LlamarDesdeSafari.png; sourceTree = "<group>"; };
+		0C441DA024985AE4005FAB1F /* EnLaAppAInvocar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnLaAppAInvocar.png; sourceTree = "<group>"; };
 		0CE8228B24984FEA002EEA07 /* iOSappLlamada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSappLlamada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE8228E24984FEA002EEA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE8229024984FEA002EEA07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				0CE8229724984FEB002EEA07 /* Assets.xcassets */,
 				0CE822A224985266002EEA07 /* LaunchScreen.storyboard */,
 				0C441D98249856E0005FAB1F /* LlamarDesdeSafari.png */,
+				0C441DA024985AE4005FAB1F /* EnLaAppAInvocar.png */,
 				0CE8229C24984FEB002EEA07 /* Info.plist */,
 			);
 			path = iOSappLlamada;
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C441D99249856E0005FAB1F /* LlamarDesdeSafari.png in Resources */,
+				0C441DA124985AE4005FAB1F /* EnLaAppAInvocar.png in Resources */,
 				0CE822A7249855AC002EEA07 /* MainLlamada.storyboard in Resources */,
 				0CE822A324985266002EEA07 /* LaunchScreen.storyboard in Resources */,
 				0CE8229824984FEB002EEA07 /* Assets.xcassets in Resources */,

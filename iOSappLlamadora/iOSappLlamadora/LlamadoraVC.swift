@@ -17,7 +17,9 @@ class LlamadoraVC: UIViewController {
     }
     
     @IBAction func onBtnAbrirLaOtraApp() {
-        guard let appLlamadaURL = URL(string: "iOSappLlamada://") else {
+        guard let appLlamadaURL = URL(string: "iOSappLlamada://"),
+            UIApplication.shared.canOpenURL(appLlamadaURL)
+            else {
             print("No se ha podido abrir")
             return
         }
