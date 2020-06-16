@@ -23,15 +23,35 @@ iOSappLlamada</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensaje recibido:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGZ-c2-jqv">
+                                <rect key="frame" x="20" y="167" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTz-p4-LDj">
+                                <rect key="frame" x="20" y="196" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.93638359719999997" blue="0.84982944540000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vnM-Zb-gay" firstAttribute="top" secondItem="ewZ-pC-JSd" secondAttribute="top" constant="64" id="AbF-Mp-F3u"/>
+                            <constraint firstItem="ewZ-pC-JSd" firstAttribute="trailing" secondItem="bTz-p4-LDj" secondAttribute="trailing" constant="20" id="J1c-1h-SUi"/>
+                            <constraint firstItem="IGZ-c2-jqv" firstAttribute="leading" secondItem="ewZ-pC-JSd" secondAttribute="leading" constant="20" id="Jfo-xN-PsJ"/>
+                            <constraint firstItem="IGZ-c2-jqv" firstAttribute="top" secondItem="vnM-Zb-gay" secondAttribute="bottom" constant="17" id="Ktc-zk-CH4"/>
+                            <constraint firstItem="bTz-p4-LDj" firstAttribute="leading" secondItem="ewZ-pC-JSd" secondAttribute="leading" constant="20" id="MLG-iS-OP0"/>
+                            <constraint firstItem="bTz-p4-LDj" firstAttribute="top" secondItem="IGZ-c2-jqv" secondAttribute="bottom" constant="8" id="YHl-Vu-DA7"/>
                             <constraint firstItem="ewZ-pC-JSd" firstAttribute="trailing" secondItem="vnM-Zb-gay" secondAttribute="trailing" constant="16" id="hyR-Vm-kwR"/>
                             <constraint firstItem="vnM-Zb-gay" firstAttribute="leading" secondItem="ewZ-pC-JSd" secondAttribute="leading" constant="16" id="jM9-NS-0cB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ewZ-pC-JSd"/>
                     </view>
+                    <connections>
+                        <outlet property="lblMsg" destination="bTz-p4-LDj" id="pkm-eR-mwS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJv-dQ-Efp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

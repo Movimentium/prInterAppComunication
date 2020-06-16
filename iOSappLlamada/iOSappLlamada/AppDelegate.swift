@@ -32,6 +32,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        // Si tenemos el SceneDelegate, llamará allí y no aquí
+        
+        print("\(self.classForCoder) \(#function)")
+        print(app)
+        print(url.baseURL ?? "No baseURL")
+        print(url.query ?? "No query string privided")
 
+        var params: [String:String] = [:]
+        if let queryStr = url.query {
+            let queryItems = queryStr.components(separatedBy: "&")
+            for item in queryItems {
+                let pair = item.components(separatedBy: "=")
+                if pair.count == 2 {
+                    params[pair[0]] = pair[1]
+                }
+            }
+            if let msg = params[K.paramStrMsg] {
+                let notif = Notification(name: Notification.Name(rawValue: K.notifNewMsg), object: msg, userInfo: nil)
+                NotificationCenter.default.post(notif)
+            }
+        }
+        
+        
+        return true
+    }
 }
 

@@ -8,17 +8,23 @@
 
 import UIKit
 
-class LlamadoraVC: UIViewController {
+class LlamadoraVC: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var txtMsg: UITextField!
+    
+    var msg: String {
+        txtMsg.text?.trimmingCharacters(in: .whitespaces) ?? "Void"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        txtMsg.delegate = self
         // Do any additional setup after loading the view.
     }
     
     @IBAction func onBtnAbrirLaOtraApp() {
-        guard let appLlamadaURL = URL(string: "iOSappLlamada://"),
-            UIApplication.shared.canOpenURL(appLlamadaURL)
+        guard let appLlamadaURL = URL(string: "iOSappLlamada://?message=\(msg)") /*,
+            UIApplication.shared.canOpenURL(appLlamadaURL)*/
             else {
             print("No se ha podido abrir")
             return
@@ -30,4 +36,11 @@ class LlamadoraVC: UIViewController {
         }
     }
      
+    // MARK: - UITextFieldDelegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 }

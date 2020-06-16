@@ -48,6 +48,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
-
+    @available(iOS 13.0, *)
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        print("\(self.classForCoder) \(#function)")
+        for (i,URLCtx) in URLContexts.enumerated() {
+            print("\(i): \(URLCtx)")
+            print(URLCtx.url.baseURL ?? "No baseURL")
+            print(URLCtx.url.query ?? "No query string privided")
+            print(URLCtx.options.sourceApplication ?? "No source app")
+                  
+            var params: [String:String] = [:]
+            if let queryStr =  URLCtx.url.query {
+                let queryItems = queryStr.components(separatedBy: "&")
+                for item in queryItems {
+                    let pair = item.components(separatedBy: "=")
+                    if pair.count == 2 {
+                        params[pair[0]] = pair[1]
+                    }
+                }
+                if let msg = params[K.paramStrMsg] {
+                    let notif = Notification(name: Notification.Name(rawValue: K.notifNewMsg), object: msg, userInfo: nil)
+                    NotificationCenter.default.post(notif)
+                }
+            }
+        }
+    }
+ 
 }
 

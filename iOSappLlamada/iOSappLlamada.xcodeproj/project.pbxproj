@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C441D99249856E0005FAB1F /* LlamarDesdeSafari.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C441D98249856E0005FAB1F /* LlamarDesdeSafari.png */; };
 		0C441DA124985AE4005FAB1F /* EnLaAppAInvocar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C441DA024985AE4005FAB1F /* EnLaAppAInvocar.png */; };
+		0CA947D82498632A00F05FE6 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA947D72498632A00F05FE6 /* K.swift */; };
 		0CE8228F24984FEA002EEA07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8228E24984FEA002EEA07 /* AppDelegate.swift */; };
 		0CE8229124984FEA002EEA07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE8229024984FEA002EEA07 /* SceneDelegate.swift */; };
 		0CE8229824984FEB002EEA07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE8229724984FEB002EEA07 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		0C441D98249856E0005FAB1F /* LlamarDesdeSafari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LlamarDesdeSafari.png; sourceTree = "<group>"; };
 		0C441DA024985AE4005FAB1F /* EnLaAppAInvocar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnLaAppAInvocar.png; sourceTree = "<group>"; };
+		0CA947D72498632A00F05FE6 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		0CE8228B24984FEA002EEA07 /* iOSappLlamada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSappLlamada.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE8228E24984FEA002EEA07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE8229024984FEA002EEA07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				0CE8228E24984FEA002EEA07 /* AppDelegate.swift */,
 				0CE8229024984FEA002EEA07 /* SceneDelegate.swift */,
+				0CA947D72498632A00F05FE6 /* K.swift */,
 				0CE822A6249855AC002EEA07 /* MainLlamada.storyboard */,
 				0CE822A824985615002EEA07 /* LlamadaVC.swift */,
 				0CE8229724984FEB002EEA07 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CE8228F24984FEA002EEA07 /* AppDelegate.swift in Sources */,
+				0CA947D82498632A00F05FE6 /* K.swift in Sources */,
 				0CE822A924985615002EEA07 /* LlamadaVC.swift in Sources */,
 				0CE8229124984FEA002EEA07 /* SceneDelegate.swift in Sources */,
 			);

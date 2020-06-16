@@ -10,21 +10,20 @@ import UIKit
 
 class LlamadaVC: UIViewController {
 
+    @IBOutlet weak var lblMsg: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let notifNewMsg = Notification.Name(K.notifNewMsg)
+        NotificationCenter.default.addObserver(forName: notifNewMsg, object: nil, queue: OperationQueue.main) { (notif) in
+            if let strMsg = notif.object as? String {
+                self.lblMsg.text = strMsg
+            }
+        }
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
