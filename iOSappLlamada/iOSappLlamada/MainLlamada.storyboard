@@ -36,7 +36,7 @@ iOSappLlamada</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.93638359719999997" blue="0.84982944540000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.93725490196078431" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vnM-Zb-gay" firstAttribute="top" secondItem="ewZ-pC-JSd" secondAttribute="top" constant="64" id="AbF-Mp-F3u"/>
                             <constraint firstItem="ewZ-pC-JSd" firstAttribute="trailing" secondItem="bTz-p4-LDj" secondAttribute="trailing" constant="20" id="J1c-1h-SUi"/>

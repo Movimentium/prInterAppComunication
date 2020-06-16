@@ -11,7 +11,8 @@ import UIKit
 class LlamadoraVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var txtMsg: UITextField!
-    
+    @IBOutlet weak var vwImg: UIImageView!
+
     var msg: String {
         txtMsg.text?.trimmingCharacters(in: .whitespaces) ?? "Void"
     }
@@ -21,6 +22,8 @@ class LlamadoraVC: UIViewController, UITextFieldDelegate {
         txtMsg.delegate = self
         // Do any additional setup after loading the view.
     }
+    
+    // MARK: - IBActions
     
     @IBAction func onBtnAbrirLaOtraApp() {
         guard let appLlamadaURL = URL(string: "iOSappLlamada://?message=\(msg)") /*,
@@ -35,6 +38,14 @@ class LlamadoraVC: UIViewController, UITextFieldDelegate {
             }
         }
     }
+    
+    @IBAction func onBtnEnviarImgPorAirDrop() {
+        guard let img = vwImg.image else {
+            return
+        }
+        let activityVC = UIActivityViewController(activityItems: [img], applicationActivities: nil)
+        present(activityVC, animated: true, completion: nil)
+    }
      
     // MARK: - UITextFieldDelegate
     
@@ -42,5 +53,7 @@ class LlamadoraVC: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
+    
     
 }

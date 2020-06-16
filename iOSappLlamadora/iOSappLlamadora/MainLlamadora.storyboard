@@ -39,24 +39,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="PlazaSol" translatesAutoresizingMaskIntoConstraints="NO" id="ewZ-3M-oQf">
+                                <rect key="frame" x="20" y="333" width="335" height="209"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFQ-6E-l4a">
+                                <rect key="frame" x="20" y="550" width="180" height="30"/>
+                                <state key="normal" title="Enviar imagen por AirDrop"/>
+                                <connections>
+                                    <action selector="onBtnEnviarImgPorAirDrop" destination="4Wj-pG-mI6" eventType="touchUpInside" id="5no-aZ-lTK"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.74260401730000003" green="0.89805346730000002" blue="0.76340330649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74117647058823533" green="0.89803921568627454" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="4z6-Fl-Ip6" firstAttribute="centerX" secondItem="bdx-r6-NCK" secondAttribute="centerX" id="43G-w7-tHi"/>
                             <constraint firstItem="TT7-tl-pfP" firstAttribute="trailing" secondItem="L9N-ua-TjV" secondAttribute="trailing" constant="20" id="4Fl-eZ-EBF"/>
                             <constraint firstItem="4z6-Fl-Ip6" firstAttribute="top" secondItem="IHK-Ce-gyh" secondAttribute="bottom" constant="69" id="6fA-xl-hLn"/>
                             <constraint firstItem="L9N-ua-TjV" firstAttribute="top" secondItem="RLS-KS-08t" secondAttribute="bottom" constant="8" id="AsC-yj-1CR"/>
+                            <constraint firstItem="ewZ-3M-oQf" firstAttribute="top" secondItem="L9N-ua-TjV" secondAttribute="bottom" constant="24" id="FHZ-Zu-737"/>
                             <constraint firstItem="IHK-Ce-gyh" firstAttribute="leading" secondItem="TT7-tl-pfP" secondAttribute="leading" constant="20" id="H7h-qv-uYj"/>
+                            <constraint firstItem="TT7-tl-pfP" firstAttribute="bottom" secondItem="ewZ-3M-oQf" secondAttribute="bottom" constant="125" id="PZH-gg-l5y"/>
+                            <constraint firstItem="ewZ-3M-oQf" firstAttribute="trailing" secondItem="L9N-ua-TjV" secondAttribute="trailing" id="VH7-ai-bgh"/>
                             <constraint firstItem="IHK-Ce-gyh" firstAttribute="top" secondItem="TT7-tl-pfP" secondAttribute="top" constant="64" id="ZkJ-V0-zMc"/>
+                            <constraint firstItem="IFQ-6E-l4a" firstAttribute="top" secondItem="ewZ-3M-oQf" secondAttribute="bottom" constant="8" id="bUo-S1-0fp"/>
                             <constraint firstItem="RLS-KS-08t" firstAttribute="leading" secondItem="TT7-tl-pfP" secondAttribute="leading" constant="20" id="dqL-nJ-ijC"/>
                             <constraint firstItem="L9N-ua-TjV" firstAttribute="leading" secondItem="TT7-tl-pfP" secondAttribute="leading" constant="20" id="jpx-TV-B2x"/>
+                            <constraint firstItem="ewZ-3M-oQf" firstAttribute="leading" secondItem="L9N-ua-TjV" secondAttribute="leading" id="kKa-8D-Etb"/>
                             <constraint firstItem="RLS-KS-08t" firstAttribute="top" secondItem="4z6-Fl-Ip6" secondAttribute="bottom" constant="40" id="rmi-aN-cTy"/>
+                            <constraint firstItem="IFQ-6E-l4a" firstAttribute="leading" secondItem="TT7-tl-pfP" secondAttribute="leading" constant="20" id="xni-Qx-Cgf"/>
                             <constraint firstItem="TT7-tl-pfP" firstAttribute="trailing" secondItem="IHK-Ce-gyh" secondAttribute="trailing" constant="20" id="yC6-Dj-t72"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TT7-tl-pfP"/>
                     </view>
                     <connections>
                         <outlet property="txtMsg" destination="L9N-ua-TjV" id="ypp-RY-2hU"/>
+                        <outlet property="vwImg" destination="ewZ-3M-oQf" id="4TW-jf-6hk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fca-4l-BsZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -64,4 +81,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="154.27286356821591"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PlazaSol" width="1086" height="724"/>
+    </resources>
 </document>
